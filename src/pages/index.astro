@@ -1,15 +1,11 @@
 ---
+const pageTitle = "Home"
+import BaseLayout from "../layouts/BaseLayout.astro";
 ---
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<BaseLayout pageTitle = {pageTitle}>
+	<!-- slot in base layout -->
+	<section>
+		<img src="/pexels-arina-krasnikova-7725950.jpg" alt="black cat laying on the floor" width="30%">
+		<p>Lorem ipsum</p>
+	</section>
+</BaseLayout>
