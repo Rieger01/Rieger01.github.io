@@ -5,10 +5,13 @@ import Excerpt from '../components/Excerpt.astro';
 const pageTitle = "Lorem Ipsum";
 ---
 <BaseLayout pageTitle={pageTitle}>
-	<section class="full__three_column gap__3_rem">
-		<img src = "/img/picture_placeholder.png" alt = "Image placeholder" />
-		<img src = "/img/picture_placeholder.png" alt = "Image placeholder" />
-		<img src = "/img/picture_placeholder.png" alt = "Image placeholder" />
+	<section aria-labelledby="primary-heading">
+		<h1 id="primary-heading" class="centered">{pageTitle}</h1>
+		<div class="full__three_column gap__3_rem">
+			<img src = "/img/picture_placeholder.png" alt = "Image placeholder" />
+			<img src = "/img/picture_placeholder.png" alt = "Image placeholder" />
+			<img src = "/img/picture_placeholder.png" alt = "Image placeholder" />
+		</div>
 	</section>
 	<Band bandTitle = "Lorem Ipsum">
 		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut libero eu 
@@ -21,11 +24,13 @@ const pageTitle = "Lorem Ipsum";
 		consectetur felis sem, ut interdum orci ornare non. Donec cursus massa non euismod 
 		luctus.
 	</Band>
-	<h2 class= "centered">News Ipsum</h2>
-	<section class="full__four_column container text__column">
-		<Excerpt articleTitle="Lorem Ipsum"></Excerpt>
-		<Excerpt articleTitle="Etiam Accusam"></Excerpt>
-		<Excerpt articleTitle="Donec Gravida"></Excerpt>
-		<Excerpt articleTitle="Suspendisse Consectetur"></Excerpt>
+	<section aria-labelledby="news-heading">
+		<h2 id="news-heading" class="centered">News Ipsum</h2>
+		<div class="full__four_column container text__column">
+			<Excerpt articleTitle="Lorem Ipsum"></Excerpt>
+			<Excerpt articleTitle="Etiam Accusam"></Excerpt>
+			<Excerpt articleTitle="Donec Gravida"></Excerpt>
+			<Excerpt articleTitle="Suspendisse Consectetur"></Excerpt>
+		</div>
 	</section>
 </BaseLayout>
