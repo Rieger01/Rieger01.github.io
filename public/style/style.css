@@ -1,0 +1,83 @@
+:root {
+    background: #000000;
+    color: #FFFFFF;
+}
+
+Header {
+    width: 100%;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+h1 {
+    font-size: 6rem;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+.nav {
+    background: #000000;
+    color: #A538FF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 97.5%;
+    margin: auto 1.25%;
+}
+
+nav {
+    border-bottom: .0625rem solid #A538FF;
+}
+
+nav a {
+    color: #A538FF;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+#nav_options li{
+    display: inline-block;
+    margin-left: 2rem;
+}
+
+#aboutMeContent {
+    width: 60%;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    row-gap: 2rem;
+}
+
+#aboutMeContent img{
+    width: 100%
+}
+
+#aboutMeContent div {
+    padding: .5rem;
+    margin: .5rem;
+}
+
+.full__two_column {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.infoBoxDiv {
+    border: .0625rem solid #A538FF;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.infoBoxDiv:not(:last-of-type) {
+    margin-right: 2rem;
+}

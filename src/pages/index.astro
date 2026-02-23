@@ -1,15 +1,81 @@
 ---
+const pageTitle = "Home"
+import BaseLayout from '../layouts/BaseLayout.astro';
+import InfoBox from '../components/InfoBox.astro';
 ---
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<BaseLayout pageTitle = {pageTitle}>
+	<!-- slot in base layout -->
+	<section>
+		<h1>About Me</h1>
+		<section id="aboutMeContent">
+			<div>
+				<img src="/pexels-arina-krasnikova-7725950.jpg" alt="black cat laying on the floor" width="30%">
+			</div>
+			<div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+				Vestibulum fermentum lacus eu elit pretium, ac gravida dolor suscipit.
+				Donec porttitor, mauris consectetur egestas auctor, magna ex laoreet justo, ut pulvinar purus lorem ut est.
+				Nunc pharetra tristique leo, ac malesuada massa cursus id.
+				Curabitur dapibus quam facilisis, pellentesque neque eleifend, laoreet neque.
+				Aenean id elit consequat, consequat sem sed, ullamcorper nulla.
+				Aenean imperdiet libero vel tellus sodales posuere.
+				Morbi dolor dolor, dignissim ac imperdiet et, feugiat ac lorem.
+				Phasellus dapibus condimentum nibh sit amet porttitor.
+				Pellentesque nec tristique enim, ut rutrum ligula.
+				Morbi dictum bibendum ligula et tincidunt.
+				Fusce faucibus metus ut nulla dictum aliquet.
+				Aliquam sed tristique eros, ut viverra magna.</p>
+			</div>
+		</section>
+		<h2>Experience</h2>
+		<section>
+			<InfoBox infoBoxTitle = "Skills">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+				Vestibulum fermentum lacus eu elit pretium, ac gravida dolor suscipit.
+				Donec porttitor, mauris consectetur egestas auctor, magna ex laoreet justo, ut pulvinar purus lorem ut est.
+				Nunc pharetra tristique leo, ac malesuada massa cursus id.
+				Curabitur dapibus quam facilisis, pellentesque neque eleifend, laoreet neque.
+				Aenean id elit consequat, consequat sem sed, ullamcorper nulla.
+				Aenean imperdiet libero vel tellus sodales posuere.
+				Morbi dolor dolor, dignissim ac imperdiet et, feugiat ac lorem.
+				Phasellus dapibus condimentum nibh sit amet porttitor.
+				Pellentesque nec tristique enim, ut rutrum ligula.
+				Morbi dictum bibendum ligula et tincidunt.
+				Fusce faucibus metus ut nulla dictum aliquet.
+				Aliquam sed tristique eros, ut viverra magna.
+			</InfoBox>
+		</section>
+		<section class = "full__two_column">
+			<InfoBox infoBoxTitle = "Jobs" class = "full__two_column">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+				Vestibulum fermentum lacus eu elit pretium, ac gravida dolor suscipit.
+				Donec porttitor, mauris consectetur egestas auctor, magna ex laoreet justo, ut pulvinar purus lorem ut est.
+				Nunc pharetra tristique leo, ac malesuada massa cursus id.
+				Curabitur dapibus quam facilisis, pellentesque neque eleifend, laoreet neque.
+				Aenean id elit consequat, consequat sem sed, ullamcorper nulla.
+				Aenean imperdiet libero vel tellus sodales posuere.
+				Morbi dolor dolor, dignissim ac imperdiet et, feugiat ac lorem.
+				Phasellus dapibus condimentum nibh sit amet porttitor.
+				Pellentesque nec tristique enim, ut rutrum ligula.
+				Morbi dictum bibendum ligula et tincidunt.
+				Fusce faucibus metus ut nulla dictum aliquet.
+				Aliquam sed tristique eros, ut viverra magna.
+			</InfoBox>
+			<InfoBox infoBoxTitle = "Classes" >
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+				Vestibulum fermentum lacus eu elit pretium, ac gravida dolor suscipit.
+				Donec porttitor, mauris consectetur egestas auctor, magna ex laoreet justo, ut pulvinar purus lorem ut est.
+				Nunc pharetra tristique leo, ac malesuada massa cursus id.
+				Curabitur dapibus quam facilisis, pellentesque neque eleifend, laoreet neque.
+				Aenean id elit consequat, consequat sem sed, ullamcorper nulla.
+				Aenean imperdiet libero vel tellus sodales posuere.
+				Morbi dolor dolor, dignissim ac imperdiet et, feugiat ac lorem.
+				Phasellus dapibus condimentum nibh sit amet porttitor.
+				Pellentesque nec tristique enim, ut rutrum ligula.
+				Morbi dictum bibendum ligula et tincidunt.
+				Fusce faucibus metus ut nulla dictum aliquet.
+				Aliquam sed tristique eros, ut viverra magna.
+			</InfoBox>
+		</section>
+	</section>
+</BaseLayout>
