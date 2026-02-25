@@ -48,9 +48,12 @@ p {
 
 nav {
     border-bottom: .125rem solid #A538FF;
+    /*margin-top: 1rem;
+    border: .125rem solid #A538FF;
+    border-radius: 1rem;*/
 }
 
-nav a {
+nav a, footer a {
     color: #A538FF;
     text-decoration: none;
     font-size: 2rem;
@@ -59,6 +62,17 @@ nav a {
 #nav_options li{
     display: inline-block;
     margin-left: 2rem;
+}
+
+footer li {
+    list-style: none;
+}
+
+footer {
+    border-top: .125rem solid #A538FF;
+    /*margin-bottom: 1rem;
+    border: .125rem solid #A538FF;
+    border-radius: 1rem;*/
 }
 
 #aboutMeContent {
@@ -105,4 +119,14 @@ nav a {
 
 .infoBoxDiv:not(:last-of-type) {
     margin-right: 2rem;
+}
+
+button {
+    margin-top: 1rem;
+    border: .25rem solid #A538FF;
+    border-radius: 1rem;
+    background-color: #7A21D4;
+    color: #FFFFFF;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
