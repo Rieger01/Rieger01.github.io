@@ -1,6 +1,23 @@
 :root {
     background: #000000;
     color: #FFFFFF;
+    font-family: myFont;
+}
+
+body {
+    margin:0;
+    padding: 0;
+}
+
+@font-face {
+  font-family: myFont;
+  src: url(../hack/Hack-Regular.ttf);
+}
+
+@font-face {
+  font-family: myFont;
+  src: url(../hack/Hack-Bold.ttf);
+  font-weight: bold;
 }
 
 Header {
@@ -20,15 +37,17 @@ h1 {
 }
 
 h2 {
-    font-size: 4rem;
+    font-size: 4.5rem;
 }
 
 h3 {
-    font-size: 2rem;
+    font-size: 3rem;
+    margin: 1rem;
 }
 
 p {
     margin: 0;
+    font-size: .875rem;
 }
 
 /*#h1HomePage {
@@ -65,9 +84,11 @@ nav a, footer a {
 
 footer li {
     list-style: none;
+    margin-right: 1rem;
 }
 
 footer {
+    text-align: right;
     border-top: .125rem solid #A538FF;
     /*margin-bottom: 1rem;
     border: .125rem solid #A538FF;
@@ -84,7 +105,7 @@ footer {
 }
 
 #aboutMeContent img{
-    width: 100%
+    width: 100%;
 }
 
 #aboutMeContent div {
@@ -121,6 +142,11 @@ button {
     border-radius: 1rem;
     background-color: #7A21D4;
     color: #FFFFFF;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.container {
+    display: grid;
+    place-items: center;
 }
