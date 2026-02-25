@@ -25,7 +25,6 @@ h2 {
 
 h3 {
     font-size: 2rem;
-    text-decoration: #A538FF 0.0625rem underline;
 }
 
 p {
@@ -106,13 +105,8 @@ footer {
 }
 
 .infoBoxDiv {
-<<<<<<< HEAD
-    border-bottom: .0625rem solid #A538FF;
-    /*border-radius: 1rem;*/
-=======
     border: .125rem solid #A538FF;
     border-radius: 1rem;
->>>>>>> 3f83c3dd6d1de6fc47cc76ea43a57de8c2eadf2e
     padding: 1rem;
     margin-bottom: 2rem;
 }
