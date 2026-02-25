@@ -21,6 +21,7 @@ h2 {
 
 h3 {
     font-size: 2rem;
+    text-decoration: #A538FF 0.0625rem underline;
 }
 
 .nav {
@@ -54,6 +55,7 @@ nav a {
     flex: 1;
     flex-direction: row;
     row-gap: 2rem;
+    margin: 0 auto;
 }
 
 #aboutMeContent img{
@@ -73,8 +75,8 @@ nav a {
 }
 
 .infoBoxDiv {
-    border: .0625rem solid #A538FF;
-    border-radius: 1rem;
+    border-bottom: .0625rem solid #A538FF;
+    /*border-radius: 1rem;*/
     padding: 1rem;
 }
 
