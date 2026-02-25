@@ -11,6 +11,10 @@ h1, h2, h3 {
     text-align: center;
 }
 
+h1, h2 {
+    margin: 2rem auto 1rem auto;
+}
+
 h1 {
     font-size: 6rem;
 }
@@ -24,6 +28,14 @@ h3 {
     text-decoration: #A538FF 0.0625rem underline;
 }
 
+p {
+    margin: 0;
+}
+
+/*#h1HomePage {
+    margin: 2rem auto 1rem auto;
+}*/
+
 .nav {
     background: #000000;
     color: #A538FF;
@@ -35,7 +47,7 @@ h3 {
 }
 
 nav {
-    border-bottom: .0625rem solid #A538FF;
+    border-bottom: .125rem solid #A538FF;
 }
 
 nav a {
@@ -67,17 +79,28 @@ nav a {
     margin: .5rem;
 }
 
+#experienceBoxes {
+    margin: 2rem;
+}
+
 .full__two_column {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    padding: 1rem;
-    margin: 1rem;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    row-gap: 2rem;
+    margin: 0 auto;
 }
 
 .infoBoxDiv {
+<<<<<<< HEAD
     border-bottom: .0625rem solid #A538FF;
     /*border-radius: 1rem;*/
+=======
+    border: .125rem solid #A538FF;
+    border-radius: 1rem;
+>>>>>>> 3f83c3dd6d1de6fc47cc76ea43a57de8c2eadf2e
     padding: 1rem;
+    margin-bottom: 2rem;
 }
 
 .infoBoxDiv:not(:last-of-type) {
