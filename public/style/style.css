@@ -60,8 +60,7 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 97.5%;
-    margin: auto 1.25%;
+    margin: auto 1rem;
 }
 
 nav {
@@ -96,7 +95,7 @@ footer {
 }
 
 #aboutMeContent {
-    width: 60%;
+    width: 60rem;
     display: flex;
     flex: 1;
     flex-direction: row;
@@ -150,4 +149,21 @@ button {
     display: grid;
     place-items: center;
 }
-/*test*/
+
+@media screen and (max-width: 999px) {
+    #aboutMeContent {
+        width: 100%;
+    }
+
+    .full__two_column{
+        flex-direction: column;
+        row-gap: 0;
+    }
+
+    .infoBoxDiv:not(:last-of-type) {
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 767px) {
+}
