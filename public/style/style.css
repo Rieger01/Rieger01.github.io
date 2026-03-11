@@ -1,16 +1,23 @@
 ::selection {
-    background: #D9D9D9;
-    color: #222;
+    background: var(--webco-color-gray);
+    color: var(--webco-printer-black);
+}
+
+:root {
+    --webco-color-purple-bg: #432194;
+    --webco-color-gray: #D9D9D9;
+    --webco-printer-black: #222;
+    --webco-white: #fff;
 }
 
 * {
     margin: 0;
     line-height: 2rem;
-    color: #222;
+    color: var(--webco-printer-black);
 }
 
 ul, li, i, b, em, strong {
-    color: #fff;
+    color: var(--webco-white);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -30,7 +37,7 @@ html {
 }
 
 header {
-    background: #D9D9D9;
+    background: var(--webco-color-gray);
     height: 3rem;
     align-items: center;
     display: grid;
@@ -39,7 +46,7 @@ header {
 }
 
 header strong {
-    color: #222;
+    color: var(--webco-printer-black);
 }
 
 nav {
@@ -48,7 +55,7 @@ nav {
 
 nav a {
     text-decoration: none;
-    color: #432194;
+    color: var(--webco-color-purple-bg);
 }
 
 nav a:not(:last-of-type) {
@@ -56,7 +63,7 @@ nav a:not(:last-of-type) {
 }
 
 nav a:hover {
-    text-decoration: underline dashed #432194 1px;
+    text-decoration: underline dashed var(--webco-color-purple-bg) 1px;
 }
 
 body {
@@ -64,7 +71,7 @@ body {
 }
 
 footer {
-    background: #D9D9D9;
+    background: var(--webco-color-gray);
     height: 6rem;
     align-content: center;
 }
@@ -95,16 +102,34 @@ article p {
 
 blockquote {
     padding-left: 1rem;
-    border-left: 3px solid #D9D9D9;
+    border-left: 3px solid var(--webco-color-gray);
 }
 
 th, td {
-    border: 1px solid #D9D9D9;
+    border: 1px solid var(--webco-color-gray);
+}
+
+#menu {
+    position: relative;
 }
 
 #search {
     margin: 0 auto;
     width: 100%;
+    position: relative;
+}
+
+#search button {
+    background: none;
+    position: absolute;
+    cursor: pointer;
+    right: .5rem;
+    top: .125rem;
+    border: none;
+}
+
+.mode-toggle {
+    position: relative;
 }
 
 .full__three_column {
@@ -126,11 +151,11 @@ th, td {
 
 .full__purple_band {
     width: 100%;
-    background: #432194;
+    background: var(--webco-color-purple-bg);
 }
 
 .full__purple_band :is(h1, h2, h3, h4, h5, h6, p) {
-    color: #fff;
+    color: var(--webco-white);
 }
 
 .input__rounded {
@@ -142,8 +167,12 @@ th, td {
     text-align: center;
 }
 
+.fa-search {
+    color: var(--webco-printer-black);
+}
+
 .article__border_right:not(:last-of-type) {
-    border-right: 1px dashed #222;
+    border-right: 1px dashed var(--webco-printer-black);
 }
 
 .gap__3_rem {
@@ -172,7 +201,7 @@ th, td {
   nav {
      grid-column: span 2;
   }
-  
+
   .full__three_column, .full__four_column {
     grid-template-columns: repeat(1, 1fr);
     row-gap: 3rem;
