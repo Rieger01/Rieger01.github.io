@@ -1,16 +1,32 @@
 ---
 import Band from '../components/Band.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
+import ProductImage from '../components/ProductImage.astro';
 import Excerpt from '../components/Excerpt.astro';
 const pageTitle = "Lorem Ipsum";
+const images = [
+	{src: "/img/picture_placeholder.png", alt : "Purple mountains"},
+	{src: "https://placecats.com/1500/1024", alt: "A cat staring at the viewer menacingly"},
+	{src:"https://placehold.co/1440x1024", alt:"A placeholder with dimensions 1440 by 1024"}
+];
+const excerptTitles = [
+	"Lorem Ipsum",
+	"Etiam Accusam",
+	"Donec Gravida",
+	"Suspendisse Consectetur"
+]
 ---
 <BaseLayout pageTitle={pageTitle}>
 	<section aria-labelledby="primary-heading">
 		<h1 id="primary-heading" class="centered">{pageTitle}</h1>
 		<div class="full__three_column gap__3_rem">
-			<img src = "/img/picture_placeholder.png" alt = "Image placeholder" />
-			<img src = "/img/picture_placeholder.png" alt = "Image placeholder" />
-			<img src = "/img/picture_placeholder.png" alt = "Image placeholder" />
+			{
+				images.map(img => {
+					return (
+						<ProductImage src = {img.src} alt = {img.alt} />
+					)
+				})
+			}
 		</div>
 	</section>
 	<Band bandTitle = "Lorem Ipsum">
@@ -27,10 +43,11 @@ const pageTitle = "Lorem Ipsum";
 	<section aria-labelledby="news-heading">
 		<h2 id="news-heading" class="centered">News Ipsum</h2>
 		<div class="full__four_column container text__column">
-			<Excerpt articleTitle="Lorem Ipsum"></Excerpt>
-			<Excerpt articleTitle="Etiam Accusam"></Excerpt>
-			<Excerpt articleTitle="Donec Gravida"></Excerpt>
-			<Excerpt articleTitle="Suspendisse Consectetur"></Excerpt>
+			{
+				excerptTitles.map(title => (
+					<Excerpt excerptTitle = {title}></Excerpt>
+				))
+			}
 		</div>
 	</section>
 </BaseLayout>
