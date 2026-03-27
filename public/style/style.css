@@ -4,8 +4,16 @@
     font-family: myFont;
 }
 
+li {
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+}
+
 body {
-    margin:0;
+    margin: 0;
     padding: 0;
 }
 
@@ -60,7 +68,7 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: auto 1rem;
+    margin: 0 1rem;
 }
 
 nav {
@@ -79,6 +87,11 @@ nav a, footer a {
 #nav_options li{
     display: inline-block;
     margin-left: 2rem;
+}
+
+#name_Nav {
+    font-size: 3.5rem;
+    font-weight: 700;
 }
 
 footer li {
@@ -166,4 +179,46 @@ button {
 }
 
 @media screen and (max-width: 767px) {
+
+    h1 {
+        font-size: 4.5rem;
+    }
+
+    h2 {
+        font-size: 3.5rem;
+    }
+
+    h3 {
+        font-size: 2.5rem;
+    }
+
+    #menu {
+        flex-direction: column;
+    }
+
+    #menu ul li a {
+        font-size: 1.5rem;
+    }
+
+    #nav_options li {
+        margin-left: 0;
+    }
+
+    #nav_options {
+        display: flex;
+        column-gap: 2rem;
+    }
+
+    #name_Nav {
+        margin-top: 1rem;
+    }
+
+    #aboutMeContent {
+        flex-direction: column;
+        row-gap: 0;
+    }
+
+    button {
+        margin-top: 2rem;
+    }
 }
