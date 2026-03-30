@@ -3,11 +3,15 @@ import Band from '../components/Band.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import ProductImage from '../components/ProductImage.astro';
 import Excerpt from '../components/Excerpt.astro';
+import Slider from '../components/Slider.jsx';
 const pageTitle = "Lorem Ipsum";
 const images = [
-	{src: "/img/picture_placeholder.png", alt : "Purple mountains"},
+	{src: "/img/picture_placeholder.png", alt: "Purple mountains"},
+	{src: "https://picsum.photos/1440/1024", alt: "A random image from Picsum"},
 	{src: "https://placecats.com/1500/1024", alt: "A cat staring at the viewer menacingly"},
-	{src:"https://placehold.co/1440x1024", alt:"A placeholder with dimensions 1440 by 1024"}
+	{src: "https://placehold.co/1440x1024", alt: "A placeholder with dimensions 1440 x 1024"},
+	{src: "https://picsum.photos/1440/1024", alt: "A random image from Picsum"},
+	{src: "/img/picture_placeholder.png", alt: "Purple mountains"}
 ];
 const excerptTitles = [
 	"Lorem Ipsum",
@@ -19,15 +23,7 @@ const excerptTitles = [
 <BaseLayout pageTitle={pageTitle}>
 	<section aria-labelledby="primary-heading">
 		<h1 id="primary-heading" class="centered">{pageTitle}</h1>
-		<div class="full__three_column gap__3_rem">
-			{
-				images.map(img => {
-					return (
-						<ProductImage src = {img.src} alt = {img.alt} />
-					)
-				})
-			}
-		</div>
+		<Slider slides = {images} client:load />
 	</section>
 	<Band bandTitle = "Lorem Ipsum">
 		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut libero eu 
