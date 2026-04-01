@@ -1,7 +1,18 @@
 :root {
-    background: #000000;
-    color: #FFFFFF;
+    --black: #000000;
+    --white: #FFFFFF;
+    --Lpurple:#A538FF;
+    --Dpurple:#7A21D4;
+    background: var(--black);
+    color: var(--white);
     font-family: myFont;
+}
+
+:root[data-theme="light"] {
+    --black: #FFFFFF;
+    --white: #000000;
+    --Lpurple:#7A21D4;
+    --Dpurple:#A538FF;
 }
 
 li {
@@ -63,8 +74,8 @@ p {
 }*/
 
 .nav {
-    background: #000000;
-    color: #A538FF;
+    background: var(--black);
+    color: var(--Lpurple);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -72,14 +83,14 @@ p {
 }
 
 nav {
-    border-bottom: .125rem solid #A538FF;
+    border-bottom: .125rem solid var(--Lpurple);
     /*margin-top: 1rem;
     border: .125rem solid #A538FF;
     border-radius: 1rem;*/
 }
 
 nav a, footer a {
-    color: #A538FF;
+    color: var(--Lpurple);
     text-decoration: none;
     font-size: 2rem;
 }
@@ -94,6 +105,13 @@ nav a, footer a {
     font-weight: 700;
 }
 
+#light-mode-toggle {
+    background-color: transparent;
+    color: var(--Lpurple);
+    border: none;
+    padding: 0;
+}
+
 footer li {
     list-style: none;
     margin-right: 1rem;
@@ -101,7 +119,7 @@ footer li {
 
 footer {
     text-align: right;
-    border-top: .125rem solid #A538FF;
+    border-top: .125rem solid var(--Lpurple);
     /*margin-bottom: 1rem;
     border: .125rem solid #A538FF;
     border-radius: 1rem;*/
@@ -138,7 +156,7 @@ footer {
 }
 
 .infoBoxDiv {
-    border: .125rem solid #A538FF;
+    border: .125rem solid var(--Lpurple);
     border-radius: 1rem;
     padding: 1rem;
     margin-bottom: 2rem;
@@ -150,10 +168,10 @@ footer {
 
 button {
     margin-top: 1rem;
-    border: .25rem solid #A538FF;
+    border: .25rem solid var(--Lpurple);
     border-radius: 1rem;
-    background-color: #7A21D4;
-    color: #FFFFFF;
+    background-color: var(--Dpurple);
+    color: var(--white);
     font-size: 2rem;
     padding: 1rem;
 }
