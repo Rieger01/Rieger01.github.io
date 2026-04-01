@@ -18,7 +18,7 @@ const Slider = ({slides}) => {
     return(
         <div className="image-slider">
             <ul>
-                {slides.map((slide, index) => {
+                {slides.map((slide, index) => (
                     <li key = {index} className = {index === currentIndex ? "active" : ""}>
                         <img
                             src = {slide.src}
@@ -28,7 +28,7 @@ const Slider = ({slides}) => {
                             }}
                         />
                     </li>
-                })}
+                ))}
             </ul>
         </div>
     );
