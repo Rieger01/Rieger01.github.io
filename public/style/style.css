@@ -183,6 +183,7 @@ input:checked + .slider:before{
 }
 
 .image-slider {
+    position: relative;
     height: 50vh;
     overflow: hidden;
     width: 95vw;
@@ -205,6 +206,28 @@ input:checked + .slider:before{
 .image-slider img {
     height: 100%;
     transition: 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.image-slider button {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    height: 100%;
+    z-index: 10;
+    font-size: 3rem;
+}
+
+.fa-circle-arrow-left, .fa-circle-arrow-right{
+    color: var(--webco-color-purple-bg);
+    background-color: transparent;
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    right: 0;
 }
 
 .auto-suggest {
