@@ -6,13 +6,13 @@ const Slider = ({slides}) => {
     const handleClick = (evt) => {
         console.log(evt.target.className);
         if(evt.target.className.includes("right")) {
-            if (currentIndex === slides.length - 1) {
+            if (currentIndex === slides.length - 3) {
                 return setCurrentIndex(0);
             }
             return setCurrentIndex(currentIndex + 1);
         } else {
             if (currentIndex === 0) {
-                return setCurrentIndex(slides.length - 1);
+                return setCurrentIndex(slides.length - 3);
             }
             return setCurrentIndex(currentIndex - 1);
         }
