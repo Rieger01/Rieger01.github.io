@@ -215,6 +215,7 @@ input:checked + .slider:before{
     height: 100%;
     z-index: 10;
     font-size: 3rem;
+    cursor: pointer;
 }
 
 .fa-circle-arrow-left, .fa-circle-arrow-right{
