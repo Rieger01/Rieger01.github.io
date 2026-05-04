@@ -19,12 +19,9 @@ const ToggleComponent = () => {
     });
 
     return (
-
-<label className="mode-toggle">
-    <button id="light-mode-toggle" name="toggle" onClick = {HandleToggleChange}>
-        <i className="fa-regular fa-lightbulb"></i>
-    </button>
-</label>
+<button id="light-mode-toggle" name="toggle" aria-label="dark light mode toggle" onClick = {HandleToggleChange}>
+    <i className="fa-regular fa-lightbulb"></i>
+</button>
     )
 }
 

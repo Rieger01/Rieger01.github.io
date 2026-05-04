@@ -2,6 +2,7 @@
 const pageTitle = "Home"
 import BaseLayout from '../layouts/BaseLayout.astro';
 import InfoBox from '../components/InfoBox.astro';
+import Skills from '../components/SkillsItems.jsx';
 ---
 <BaseLayout pageTitle = {pageTitle}>
 	<!-- slot in base layout -->
@@ -9,7 +10,7 @@ import InfoBox from '../components/InfoBox.astro';
 		<h1 id ="h1HomePage">About Me</h1>
 		<section id="aboutMeContent">
 			<div class="container">
-				<img src="/pexels-arina-krasnikova-7725950.jpg" alt="black cat laying on the floor">
+				<img src="/TriangleCatFinalBlue.jpg" alt="image made of triangles of a black cat sitting in pot of flowers with blue background">
 			</div>
 			<div class="container">
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -32,51 +33,74 @@ import InfoBox from '../components/InfoBox.astro';
 		<div id="experienceBoxes">
 			<section>
 				<InfoBox infoBoxTitle = "Skills">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-					Vestibulum fermentum lacus eu elit pretium, ac gravida dolor suscipit.
-					Donec porttitor, mauris consectetur egestas auctor, magna ex laoreet justo, ut pulvinar purus lorem ut est.
-					Nunc pharetra tristique leo, ac malesuada massa cursus id.
-					Curabitur dapibus quam facilisis, pellentesque neque eleifend, laoreet neque.
-					Aenean id elit consequat, consequat sem sed, ullamcorper nulla.
-					Aenean imperdiet libero vel tellus sodales posuere.
-					Morbi dolor dolor, dignissim ac imperdiet et, feugiat ac lorem.
-					Phasellus dapibus condimentum nibh sit amet porttitor.
-					Pellentesque nec tristique enim, ut rutrum ligula.
-					Morbi dictum bibendum ligula et tincidunt.
-					Fusce faucibus metus ut nulla dictum aliquet.
-					Aliquam sed tristique eros, ut viverra magna.
+					<div class="skills">
+						<Skills />
+						<Skills />
+						<Skills />
+						<Skills />
+						<Skills />
+					</div>
 				</InfoBox>
 			</section>
 			<section class = "full__two_column">
-				<InfoBox infoBoxTitle = "Jobs" class = "full__two_column">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-					Vestibulum fermentum lacus eu elit pretium, ac gravida dolor suscipit.
-					Donec porttitor, mauris consectetur egestas auctor, magna ex laoreet justo, ut pulvinar purus lorem ut est.
-					Nunc pharetra tristique leo, ac malesuada massa cursus id.
-					Curabitur dapibus quam facilisis, pellentesque neque eleifend, laoreet neque.
-					Aenean id elit consequat, consequat sem sed, ullamcorper nulla.
-					Aenean imperdiet libero vel tellus sodales posuere.
-					Morbi dolor dolor, dignissim ac imperdiet et, feugiat ac lorem.
-					Phasellus dapibus condimentum nibh sit amet porttitor.
-					Pellentesque nec tristique enim, ut rutrum ligula.
-					Morbi dictum bibendum ligula et tincidunt.
-					Fusce faucibus metus ut nulla dictum aliquet.
-					Aliquam sed tristique eros, ut viverra magna.
+				<InfoBox infoBoxTitle = "Jobs">
+					<div class = "jobs">
+						<div>
+							<div class = "titleInfo">
+								<p><strong>Production Technician</strong></p>
+								<p>September 2025 - Present</p>
+							</div>
+							<ul>
+								<li>Allegheny Playshop</li>
+								<li>520 North Main Street</li>
+								<li>Erie, PA 16335</li>
+								<li>Supervisor: LeeAnn Yeckley</li>
+								<li>Duties: Rigging, cutting, assembling, electrics, cleaning</li>
+							</ul>
+						</div>
+						<div>
+							<div class="titleInfo">
+								<p><strong>IT Intern</strong></p>
+								<p>Summers July 2024 - August 2025</p>
+							</div>
+							<ul>
+								<li>Comfort Care & Resources</li>
+								<li>3520 W. 26th St.</li>
+								<li>Erie, PA 16506</li>
+								<li>Supervisor: Louis Rieger</li>
+								<li>Duties: Writing functions; debugging code; testing live data; organizing website visuals</li>
+							</ul>
+						</div>
+					</div>
 				</InfoBox>
 				<InfoBox infoBoxTitle = "Classes" >
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-					Vestibulum fermentum lacus eu elit pretium, ac gravida dolor suscipit.
-					Donec porttitor, mauris consectetur egestas auctor, magna ex laoreet justo, ut pulvinar purus lorem ut est.
-					Nunc pharetra tristique leo, ac malesuada massa cursus id.
-					Curabitur dapibus quam facilisis, pellentesque neque eleifend, laoreet neque.
-					Aenean id elit consequat, consequat sem sed, ullamcorper nulla.
-					Aenean imperdiet libero vel tellus sodales posuere.
-					Morbi dolor dolor, dignissim ac imperdiet et, feugiat ac lorem.
-					Phasellus dapibus condimentum nibh sit amet porttitor.
-					Pellentesque nec tristique enim, ut rutrum ligula.
-					Morbi dictum bibendum ligula et tincidunt.
-					Fusce faucibus metus ut nulla dictum aliquet.
-					Aliquam sed tristique eros, ut viverra magna.
+					<div class = "classes">
+						<div>
+							<div class = "titleInfo">
+								<p><strong>Allegheny College</strong></p>
+								<p>Expected Graduation 2028</p>
+							</div>
+							<ul>
+								<li>520 North Main Street</li>
+								<li>Erie, PA 16335</li>
+								<li>Relevant computer science coursework: Data Structures, Document Engineering, Programming Languages, Web Design, Operating Systems</li>
+								<li>Relevant art coursework: Painting I, Sculpture I, Ceramics I, Electronice & Intermedia Art, Contemporary Strategies in Art</li>
+								<li>Double-Major: Software Engineering and Art, Science, and Innovation</li>
+							</ul>
+						</div>
+						<div>
+							<div class="titleInfo">
+								<p><strong>McDowell High School</strong></p>
+								<p>June 2024</p>
+							</div>
+							<ul>
+								<li>3580 West 38th Street</li>
+								<li>Erie, PA 16506</li>
+								<li>Relevant computer science coursework: Computer Science 1, Computer Science 2, Game Development and Programming, AP Computer Science Principles, AP Computer Science A, Web Design, Web Development</li>
+								<li>Relevant art coursework: Drawing 1, Drawing 2, Drawing 3, Animation, Graphic Arts</li>
+							</ul>
+						</div>
+					</div>
 				</InfoBox>
 			</section>
 		</div>

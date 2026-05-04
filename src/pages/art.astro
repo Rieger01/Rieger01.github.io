@@ -1,9 +1,36 @@
 ---
 const pageTitle = "Art";
 import BaseLayout from "../layouts/BaseLayout.astro";
+import ArtSlider from "../components/ArtSlider.astro";
+const drawingImages = [
+    {src: "/Drawing.png", alt: "thumbnail image 1"},
+    {src: "/Drawing.png", alt: "thumbnail image 2"},
+    {src: "/Drawing.png", alt: "thumbnail image 3"},
+    {src: "/Drawing.png", alt: "thumbnail image 4"},
+    {src: "/Drawing.png", alt: "thumbnail image 5"},
+    {src: "/Drawing.png", alt: "thumbnail image 6"}
+]
+const paintingImages = [
+    {src: "/Drawing.png", alt: "thumbnail image 1"},
+    {src: "/Drawing.png", alt: "thumbnail image 2"},
+    {src: "/Drawing.png", alt: "thumbnail image 3"},
+    {src: "/Drawing.png", alt: "thumbnail image 4"},
+    {src: "/Drawing.png", alt: "thumbnail image 5"},
+    {src: "/Drawing.png", alt: "thumbnail image 6"}
+]
+const ceramicsImages = [
+    {src: "/Drawing.png", alt: "thumbnail image 1"},
+    {src: "/Drawing.png", alt: "thumbnail image 2"},
+    {src: "/Drawing.png", alt: "thumbnail image 3"},
+    {src: "/Drawing.png", alt: "thumbnail image 4"},
+    {src: "/Drawing.png", alt: "thumbnail image 5"},
+    {src: "/Drawing.png", alt: "thumbnail image 6"}
+]
 ---
 <BaseLayout pageTitle = {pageTitle}>
 	<!-- slot in base layout -->
-     <h1>{ pageTitle }</h1>
-	Not lorem ipsum
+    <h1 id="art">{ pageTitle }</h1>
+	<ArtSlider title="Drawing" images={drawingImages}/>
+	<ArtSlider title="Painting" images={paintingImages}/>
+	<ArtSlider title="Ceramics" images={ceramicsImages}/>
 </BaseLayout>

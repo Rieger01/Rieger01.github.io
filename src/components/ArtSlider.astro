@@ -1,0 +1,8 @@
+---
+import Slider from './ImageSlider.jsx';
+const {title} = Astro.props;
+const {images} = Astro.props;
+---
+<h2>{title}</h2>
+<hr>
+<Slider slides = {images} client:load />
