@@ -69,10 +69,6 @@ p {
     font-size: .875rem;
 }
 
-/*#h1HomePage {
-    margin: 2rem auto 1rem auto;
-}*/
-
 .nav {
     background: var(--black);
     color: var(--Lpurple);
@@ -84,9 +80,6 @@ p {
 
 nav {
     border-bottom: .125rem solid var(--Lpurple);
-    /*margin-top: 1rem;
-    border: .125rem solid #A538FF;
-    border-radius: 1rem;*/
 }
 
 nav a, footer a {
@@ -120,9 +113,6 @@ footer li {
 footer {
     text-align: right;
     border-top: .125rem solid var(--Lpurple);
-    /*margin-bottom: 1rem;
-    border: .125rem solid #A538FF;
-    border-radius: 1rem;*/
 }
 
 #aboutMeContent {
@@ -276,13 +266,11 @@ button {
 .left {
     left: 0;
     background-image: linear-gradient(to bottom, rgba(0,0,0,0), var(--black), rgba(0,0,0,0));
-    /*background-image: linear-gradient(to right, white, rgba(255,255,255,0));*/
 }
 
 .right {
     right: 0;
     background-image: linear-gradient(to bottom, rgba(0,0,0,0), var(--black), rgba(0,0,0,0));
-    /*background-image: linear-gradient(to left, white, rgba(255,255,255,0));*/
 }
 
 hr {
