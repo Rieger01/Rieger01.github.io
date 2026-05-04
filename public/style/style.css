@@ -383,4 +383,12 @@ hr {
     #nav_options li:first-of-type {
         margin-left: 2rem;
     }
+
+    .image-slider li {
+        width: 100%;
+    }
+
+    .image-slider {
+        height: 70vh;
+    }
 }

@@ -9,7 +9,7 @@ const SkillsItems = () => {
         <ul>
             {skills.map((array, index) => (
                 <li key = {index} class={array.rating} >
-                    <i class={array.icon}></i><p>{array.skill}</p>
+                    <i className={array.icon}></i><p>{array.skill}</p>
                     <div></div><div></div><div></div>
                 </li>
             ))}

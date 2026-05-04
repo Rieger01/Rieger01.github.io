@@ -21,6 +21,7 @@
   "devDependencies": {
     "@playwright/test": "^1.58.1",
     "@types/node": "^25.1.0",
-    "astro-compress": "^2.4.1"
+    "astro-compress": "^2.4.1",
+    "astro-sitemap": "^1.0.0"
   }
 }
