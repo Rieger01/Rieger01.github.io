@@ -343,7 +343,13 @@ hr {
     }
 
     #h1Programming {
-        font-size: 3.75rem;
+        font-size: 3rem;
+        margin-bottom: 0;
+    }
+
+    .h2Programming {
+        font-size: 2.5rem;
+        margin-top: 1rem;
     }
 
     #menu {
@@ -360,7 +366,7 @@ hr {
 
     #nav_options {
         display: flex;
-        column-gap: 2rem;
+        column-gap: 1.5rem;
     }
 
     #name_Nav {
