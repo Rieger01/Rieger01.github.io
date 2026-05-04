@@ -1,13 +1,12 @@
 ---
-const pageTitle = "Programming";
-import BaseLayout from "../layouts/BaseLayout.astro";
-import ProCards from "../components/ProgrammingCards.astro";
+const {project} = Astro.props;
 ---
-<BaseLayout pageTitle = {pageTitle}>
-	<!-- slot in base layout -->
-    <h1 id = "h1Programming">{ pageTitle }</h1>
-	<section class = "proDesc">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+<hr>
+<section class="proCard">
+    <img src="/Drawing2.png" alt="placeholder image yay">
+    <div>
+        <h2>{project}</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 				Vestibulum fermentum lacus eu elit pretium, ac gravida dolor suscipit.
 				Donec porttitor, mauris consectetur egestas auctor, magna ex laoreet justo, ut pulvinar purus lorem ut est.
 				Nunc pharetra tristique leo, ac malesuada massa cursus id.
@@ -20,8 +19,5 @@ import ProCards from "../components/ProgrammingCards.astro";
 				Morbi dictum bibendum ligula et tincidunt.
 				Fusce faucibus metus ut nulla dictum aliquet.
 				Aliquam sed tristique eros, ut viverra magna.</p>
-	</section>
-	<ProCards project="Project 1"/>
-	<ProCards project="Project 2"/>
-	<ProCards project="Project 3"/>
-</BaseLayout>
+    </div>
+</section>
